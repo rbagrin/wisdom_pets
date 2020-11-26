@@ -1,0 +1,61 @@
+{% load static %}
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Wisdom Pet Medicine</title>
+    <link rel="stylesheet" id="ample-style-css" href="{% static 'style.css' %}"
+        type="text/css" media="all">
+</head>
+
+<body class="wide">
+    <div id="page" class="hfeed site">
+        <header>
+            <div class="header">
+                <div class="main-head-wrap inner-wrap clearfix">
+                    <div id="header-logo-image">
+                        <a href="/">
+                            <img src="{% static 'images/logo.png' %}" alt="Wisdom Pet Medicine">
+                        </a>
+                    </div>
+                    <div id="header-text" class="">
+                        <h1 id="site-title">
+                            <a href="/" title="Wisdom Pet Medicine" rel="home">Wisdom Pet Medicine</a>
+                        </h1>
+                        <p>We treat your pets like we treat our own.</p>
+                    </div>
+                </div>
+                <img src="{% static 'images/header.jpg' %}"
+                    alt="Wisdom Pet Medicine">
+            </div>
+        </header>
+        <div class="main-wrapper">
+            <div class="single-page clearfix">
+                <div class="inner-wrap">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum autem obcaecati perspiciatis,
+                        voluptatum voluptatibus deserunt veritatis voluptatem pariatur mollitia. Minus saepe veritatis
+                        exercitationem officia amet molestias est commodi distinctio cumque. Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Aut, illum quidem? Omnis quaerat ab alias labore voluptas repellat
+                        laboriosam maxime, ut rem ullam sint dignissimos tenetur commodi beatae ea non?</p>
+                    <hr>
+                    <div>
+                        {% block content %}
+                        {% endblock %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="colophon">
+            <div class="inner-wrap">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed numquam vel recusandae! Harum tempora
+                velit, asperiores tempore ea recusandae ullam eum inventore ipsam magnam animi? Exercitationem quasi est
+                magnam quia? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, aspernatur recusandae
+                sequi placeat accusamus officiis similique vitae nisi eos nesciunt modi ex velit maxime voluptatum ullam
+                nemo odit fugiat quas?
+            </div>
+        </footer>
+    </div>
+    <script src="{% static 'main.js'%}"></script>
+</body>
+
+</html>
